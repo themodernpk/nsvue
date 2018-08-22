@@ -1,7 +1,7 @@
 import Vue from 'nativescript-vue';
+const axios = require("axios");
 
 import router from './router';
-
 
 import './styles.scss';
 

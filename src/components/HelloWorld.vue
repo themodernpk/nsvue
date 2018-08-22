@@ -10,6 +10,8 @@
       <Button class="btn btn-primary" @tap="surprise = !surprise" text="Tap me!"/>
       <Image v-if="surprise" src="~/images/NativeScript-Vue.png"/>
 
+      <Button class="btn btn-primary" @tap="onTab" text="Tap me!"/>
+
     </StackLayout>
 
   </Page>
@@ -22,6 +24,11 @@
         surprise: false,
       };
     },
+      methods: {
+          onTab: function () {
+              console.log("test");
+          }
+      }
   };
 </script>
 
