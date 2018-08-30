@@ -8,10 +8,18 @@ import Home from '../components/Home';
 import HelloWorld from '../components/HelloWorld';
 import AjaxListView from '../components/AjaxListView';
 import StoreLogin from '../components/StoreLogin';
+import StarRating from '../components/StarRating';
 
 const router = new VueRouter({
   pageRouting: true,
   routes: [
+      {
+          path: '/star-rating',
+          component: StarRating,
+          meta: {
+              title: 'Star Rating',
+          },
+      },
       {
           path: '/store-login',
           component: StoreLogin,
