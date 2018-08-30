@@ -5,6 +5,9 @@ const axios = require("axios");
 
 
 
+
+
+
 import router from './router';
 
 import './styles.scss';
@@ -15,7 +18,7 @@ import './styles.scss';
 
 new Vue({
 
-  router,
+    router,
 
 
 }).$start();
