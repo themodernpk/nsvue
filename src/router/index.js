@@ -7,11 +7,18 @@ Vue.use(VueRouter);
 import Home from '../components/Home';
 import HelloWorld from '../components/HelloWorld';
 import AjaxListView from '../components/AjaxListView';
+import StoreLogin from '../components/StoreLogin';
 
 const router = new VueRouter({
   pageRouting: true,
   routes: [
-
+      {
+          path: '/store-login',
+          component: StoreLogin,
+          meta: {
+              title: 'Store Login',
+          },
+      },
     {
         path: '/ajax-list-view',
         component: AjaxListView,
