@@ -29,7 +29,10 @@
         </v-template>
       </ListView>
 
+      <Footer/>
+
     </StackLayout>
+
 
 
 
@@ -39,6 +42,9 @@
 
 <script>
   const axios = require("axios");
+
+  import Footer from './partials/Footer'
+
   export default {
       data () {
         return {
@@ -48,6 +54,10 @@
                 name: ""
             }
         };
+      },
+      //-------------------------------------------------
+      components:{
+          Footer,
       },
       //-------------------------------------------------
       methods:{
